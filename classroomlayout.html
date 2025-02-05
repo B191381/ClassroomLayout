@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classroom Semi-Circular Layout</title>
+  <link rel="stylesheet" href="classroomlayout.css">
+</head>
+<body>
+
+  <div class="input-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Row</th>
+          <th>B1</th>
+          <th>B2</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="rows-container">
+        <tr>
+          <td>R1</td>
+          <td><input type="number" value="6" class="seats-input" data-block="1" data-row="1" min="0"></td>
+          <td><input type="number" value="6" class="seats-input" data-block="2" data-row="1" min="0"></td>
+          <td><button class="remove-row">❌</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="add-row">➕ Add Row</button>
+    <button id="generate-layout">🎨 Generate Layout</button>
+  </div>
+
+  <div class="layout-container" id="layout-container"></div>
+
+  <script src="classroomlayout.js"></script>
+</body>
+</html>
